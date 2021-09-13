@@ -1,0 +1,63 @@
+@import "./Variables/Variables.scss";
+
+html {
+	font-size: 1rem;
+	box-sizing: border-box;
+}
+
+body,
+#root {
+	height: 100vh;
+	margin: 0;
+}
+
+body,
+input,
+select,
+textarea {
+	font-family: $main-font;
+}
+
+.container {
+	display: grid;
+	grid-template-areas:
+		"header"
+		"main"
+		"footer";
+	grid-template-rows: 5rem 1fr 5rem;
+	grid-template-columns: 1fr;
+	height: 100%;
+}
+
+header {
+	grid-area: header;
+	background-color: $background-header-footer;
+	color: $font;
+	display: flex;
+	align-items: center;
+	padding: 0.5rem;
+
+	a {
+		color: $font;
+		text-decoration: none;
+		&:hover {
+			color: $links-hover;
+		}
+	}
+}
+
+main {
+	grid-area: main;
+	button {
+		@include addButton();
+	}
+}
+
+footer {
+	grid-area: footer;
+	background-color: $background-header-footer;
+	color: $font;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}

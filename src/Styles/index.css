@@ -1,0 +1,101 @@
+/* It is also possible to pass the arguments into the function:
+
+@mixin addButton ($color, $size) {
+	padding: 0.5rem;
+	border-radius: 5px;
+	border: none;
+	background-color: $color;
+	color: $links-hover;
+    font-size: $size;
+}
+
+and we call it like:
+
+
+
+*/
+html {
+  font-size: 1rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body,
+#root {
+  height: 100vh;
+  margin: 0;
+}
+
+body,
+input,
+select,
+textarea {
+  font-family: Helvetica, sans-serif;
+}
+
+.container {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "header" "main" "footer";
+  -ms-grid-rows: 5rem 1fr 5rem;
+      grid-template-rows: 5rem 1fr 5rem;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  height: 100%;
+}
+
+header {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: header;
+  background-color: #5f8ebd;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.5rem;
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+}
+
+header a:hover {
+  color: #e99485;
+}
+
+main {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: main;
+}
+
+main button {
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: none;
+  background-color: #aae3f5;
+  color: #e99485;
+}
+
+footer {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: footer;
+  background-color: #5f8ebd;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,19 @@
+/* It is also possible to pass the arguments into the function:
+
+@mixin addButton ($color, $size) {
+	padding: 0.5rem;
+	border-radius: 5px;
+	border: none;
+	background-color: $color;
+	color: $links-hover;
+    font-size: $size;
+}
+
+and we call it like:
+
+	button {
+		@include addButton(red, 35px);
+	}
+
+*/
+/*# sourceMappingURL=Variables.css.map */

@@ -1,25 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
-
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<div className="container">
+			<header>
+				<a href="/">Rock Web Shop</a>
+			</header>
+			<main>
+				<h1>Product list</h1>
+				<button>Add</button>
+			</main>
+			<footer>Elena Ivankina. 2021. All rights reserved.</footer>
+		</div>
+	);
 }
 
 export default App;
