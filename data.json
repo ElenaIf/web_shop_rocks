@@ -1,0 +1,20 @@
+{
+	"products": [
+		{
+			"id": 1,
+			"title": "rock 1",
+			"image": "/images/rock1.jpeg",
+			"description": "Very beautiful rock!",
+			"price": 20.8,
+			"sizes": ["small", "medium", "big"]
+		},
+		{
+			"id": 2,
+			"title": "rock 2",
+			"image": "/images/rock2.jpeg",
+			"description": "Even more beautiful rock!",
+			"price": 25,
+			"sizes": ["small", "medium", "big"]
+		}
+	]
+}
